@@ -1,0 +1,63 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Content style */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 20%;
+  height: 240px;
+}
+
+.button-container {
+  width: 100%;
+  height: 20%;
+}
+.button {
+  border-radius: 10px;
+  font-size: large;
+  height: 44px;
+  width: 100%;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Content body */
+.content-icons {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-body > p {
+  width: 80%;
+  font-size: larger;
+  font-weight: 400;
+}
+
+.img-cookie {
+  width: 38px;
+}
+
+.close-icon {
+  /* position: absolute; */
+  top: 14px;
+  left: 90%;
+}
+
+.close-icon > img {
+  width: 14px;
+}
+
+/* Hide the content */
+.hide {
+  display: none;
+}

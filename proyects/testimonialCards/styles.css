@@ -1,0 +1,156 @@
+/* container */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* general */
+h2 {
+  margin: 0;
+  font-weight: bold;
+  font-size: larger;
+}
+.profession {
+  font-size: small;
+}
+
+/* first testimonial card */
+.card_outline {
+  background-color: black;
+  border-radius: 1rem;
+  color: white;
+  padding: 1rem;
+  width: 260px;
+  position: relative;
+}
+
+.card_outline:after,
+.card_outline:before {
+  content: "";
+  border-style: solid;
+  border-width: 10px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 100%;
+  left: 20px;
+}
+
+.card_outline:before,
+.card_outline:after {
+  border-color: black transparent transparent;
+}
+
+.card_user {
+  gap: 1rem;
+  display: flex;
+  margin-top: 1rem;
+  margin-left: 1px;
+  align-items: center;
+}
+
+.card_user > img {
+  width: 60px;
+  height: auto;
+  border-radius: 99999px;
+}
+
+/* Second testimonial card */
+.testimonial2 {
+  width: 260px;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1.5px solid black;
+}
+
+.card3 > img {
+  width: 220px;
+  height: auto;
+  border-radius: 1rem;
+}
+/* third testimonial card */
+.testimonial3 {
+  margin-top: 1rem;
+  display: flex;
+  width: 560px;
+  gap: 1rem;
+}
+
+.starts {
+  color: rgb(255, 220, 24);
+}
+
+.user_info3 {
+  color: white;
+}
+
+.card3_profession {
+  color: rgb(160, 159, 159);
+  font-size: medium;
+}
+
+.card3_text {
+  color: white;
+}
+
+.usr_review {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card_content {
+  background-color: rgba(0, 0, 0, 0.849);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+/* fourth testimonial card */
+.testimonial4 {
+  gap: 1rem;
+  width: 800px;
+  padding: 2rem;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  text-align: center;
+  border-radius: 1rem;
+  flex-direction: column;
+  border: 1px solid black;
+}
+.ial4_text {
+  width: 90%;
+  font-size: large;
+}
+
+.user_slider > img {
+  width: 55px;
+  margin: 6px;
+  opacity: 0.2;
+  border-radius: 9999px;
+}
+
+.user_slider > .focus {
+  width: 66px;
+  opacity: 1;
+}
+
+/* arrows */
+.arrow {
+  cursor: pointer;
+  padding: 3px;
+  border: solid black;
+  display: inline-block;
+  border-width: 0 3px 3px 0;
+  position: relative;
+  bottom: 32px;
+}
+
+.right {
+  transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+}

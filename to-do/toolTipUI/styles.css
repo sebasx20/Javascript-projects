@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  width: 20%;
+  gap: 2rem;
+  margin: 90px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container > div:nth-child(-n + 2)::after {
+  content: "";
+  height: 3px;
+  width: 3px;
+  top: 100px;
+  position: absolute;
+  border-radius: 9px;
+  transform: translate(15px);
+  background-color: grey;
+}
+/* Tool tip displayer */
+
+.project-container {
+  cursor: pointer;
+}
+
+.tooltip-trigger:hover + .project-tooltip {
+  display: block;
+}
+
+.project-tooltip {
+  top: 30px;
+  left: 90px;
+  height: 25px;
+  padding: 10px;
+  text-align: center;
+  display: none;
+  color: white;
+  position: absolute;
+  border-radius: 0.7rem;
+  border: 1px solid black;
+  background-color: black;
+}
+
+.project-tooltip::after {
+  left: 40%;
+  content: "";
+  width: 20px;
+  bottom: -9px;
+  height: 20px;
+  position: absolute;
+  background: black;
+  transform: rotate(45deg);
+}

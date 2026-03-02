@@ -1,0 +1,32 @@
+.container {
+  width: 40%;
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+}
+
+.tabs-container {
+  gap: 2rem;
+  display: flex;
+}
+
+.tabs-container > div {
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: 2px solid gray;
+}
+
+.tab-content {
+  margin: 8px;
+}
+
+/* content */
+.hidden {
+  display: none;
+}
+
+.content-active {
+  display: block;
+}

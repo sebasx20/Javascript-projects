@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sidebar</title>
+  </head>
+  <body>
+    <nav class="nav-container">
+      <!-- Hamburguer icon -->
+      <div class="ham-icon" id="ham-icon">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+      <!-- dispalyed button -->
+      <div class="menu" id="menu">
+        <div class="sidebar_container">
+          <div>HTML</div>
+          <div>CSS</div>
+          <div>JS</div>
+        </div>
+      </div>
+    </nav>
+  </body>
+  <script>
+    const ham_icon = document.getElementById("ham-icon");
+    const sidebarMenu = document.getElementById("menu");
+
+    ham_icon.addEventListener("click", () => {
+      ham_icon.classList.toggle("active");
+      sidebarMenu.classList.toggle("show");
+    });
+  </script>
+</html>

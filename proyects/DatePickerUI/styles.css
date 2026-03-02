@@ -1,0 +1,11 @@
+.datePicker {
+  border: 2px solid black;
+  text-align: center;
+  font-weight: bold;
+  padding: 2px;
+}
+
+.datePicker::-webkit-calendar-picker-indicator {
+  padding: 4px;
+  border-left: 2px solid black;
+}

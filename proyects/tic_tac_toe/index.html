@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="board">
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script>
+    const cells = document.querySelectorAll(".cell");
+    let turn = 1;
+    let records = 0;
+    let gameOver = false;
+    cells.forEach((key) => key.addEventListener("click", addX));
+
+    function addX(e) {
+      if (!gameOver) {
+        if (e.target.classList[0] == "cell" && !e.target.hasChildNodes()) {
+          const figure = document.createElement("div");
+          figure.classList.add("x");
+          e.target.appendChild(figure);
+          setTimeout(() => {
+            checkWin("x");
+          }, "200");
+          ia();
+        }
+      }
+    }
+
+    function ia() {
+      if (!gameOver) {
+        for (let i = 0; i <= 20; i++) {
+          const random = Math.floor(Math.random() * cells.length);
+          const randomCell = cells[random];
+          console.log();
+
+          // Check if the html has a element
+          if (randomCell.classList[0] && !randomCell.hasChildNodes()) {
+            const figure = document.createElement("div");
+            figure.classList.add("circle");
+            randomCell.appendChild(figure);
+            playerTurn = true;
+            checkWin("circle");
+            break;
+          }
+        }
+      }
+    }
+
+    function checkWin(player) {
+      // console.log(cells[0].children[0].classList[0]);
+
+      // Horizontal
+      if (
+        cells[0].hasChildNodes() &&
+        cells[0].children[0].classList[0] == player &&
+        cells[1].hasChildNodes() &&
+        cells[1].children[0].classList[0] == player &&
+        cells[2].hasChildNodes() &&
+        cells[2].children[0].classList[0] == player
+      ) {
+        alert(player + " Ha ganado");
+        gameOver = true;
+      } else if (
+        cells[3].hasChildNodes() &&
+        cells[3].children[0].classList[0] == player &&
+        cells[4].hasChildNodes() &&
+        cells[4].children[0].classList[0] == player &&
+        cells[5].hasChildNodes() &&
+        cells[5].children[0].classList[0] == player
+      ) {
+        alert(player + " Ha ganado");
+        gameOver = true;
+      } else if (
+        cells[6].hasChildNodes() &&
+        cells[6].children[0].classList[0] == player &&
+        cells[7].hasChildNodes() &&
+        cells[7].children[0].classList[0] == player &&
+        cells[8].hasChildNodes() &&
+        cells[8].children[0].classList[0] == player
+      ) {
+        alert(player + " Ha ganado");
+        gameOver = true;
+      }
+
+      // vertical
+      if (
+        cells[0].hasChildNodes() &&
+        cells[0].children[0].classList[0] == player &&
+        cells[3].hasChildNodes() &&
+        cells[3].children[0].classList[0] == player &&
+        cells[6].hasChildNodes() &&
+        cells[6].children[0].classList[0] == player
+      ) {
+        alert(player + " Ha ganado");
+        gameOver = true;
+      } else if (
+        cells[1].hasChildNodes() &&
+        cells[1].children[0].classList[0] == player &&
+        cells[4].hasChildNodes() &&
+        cells[4].children[0].classList[0] == player &&
+        cells[7].hasChildNodes() &&
+        cells[7].children[0].classList[0] == player
+      ) {
+        alert(player + " Ha ganado");
+        gameOver = true;
+      } else if (
+        cells[2].hasChildNodes() &&
+        cells[2].children[0].classList[0] == player &&
+        cells[5].hasChildNodes() &&
+        cells[5].children[0].classList[0] == player &&
+        cells[8].hasChildNodes() &&
+        cells[8].children[0].classList[0] == player
+      ) {
+        alert(player + " Ha ganado");
+        gameOver = true;
+      }
+      // diagonal
+      if (
+        cells[0].hasChildNodes() &&
+        cells[0].children[0].classList[0] == player &&
+        cells[4].hasChildNodes() &&
+        cells[4].children[0].classList[0] == player &&
+        cells[8].hasChildNodes() &&
+        cells[8].children[0].classList[0] == player
+      ) {
+        alert(player + " Ha ganado");
+        gameOver = true;
+      }
+      if (
+        cells[2].hasChildNodes() &&
+        cells[2].children[0].classList[0] == player &&
+        cells[4].hasChildNodes() &&
+        cells[4].children[0].classList[0] == player &&
+        cells[6].hasChildNodes() &&
+        cells[6].children[0].classList[0] == player
+      ) {
+        alert(player + " Ha ganado");
+        gameOver = true;
+      }
+    }
+  </script>
+</html>

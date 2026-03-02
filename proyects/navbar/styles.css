@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.4s;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+}
+/* navbar styling */
+.navbar {
+  background-color: cadetblue;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding: 1rem;
+  display: flex;
+}
+
+/* logo style*/
+.logo {
+  background-color: burlywood;
+  border-radius: 5px;
+}
+
+/* Hamburguer icon */
+.ham-icon {
+  padding-right: 1rem;
+  cursor: pointer;
+}
+.ham-icon .line {
+  background-color: black;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: block;
+  width: 2rem;
+  height: 2px;
+}
+
+/* nav menu */
+.nav-menu {
+  background-color: cadetblue;
+  position: fixed;
+  top: 50px;
+  width: 94%;
+}
+
+.nav-menu a {
+  text-align: center;
+  padding: 5px 0;
+  display: block;
+}
+
+.nav-menu a:hover {
+  background-color: chocolate;
+}
+
+.hide {
+  display: none;
+}
+
+/* Desktop view */
+@media screen and (min-width: 600px) {
+  .navbar {
+    justify-content: space-around;
+  }
+  .nav-menu {
+    margin-right: 20px;
+    background: none;
+    position: static;
+    display: block;
+    width: auto;
+  }
+  .nav-menu a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+  .nav-menu a:hover {
+    background-color: aquamarine;
+  }
+  .ham-icon {
+    display: none;
+  }
+}

@@ -1,0 +1,28 @@
+#textarea {
+  width: 420px;
+  height: 120px;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 12px;
+  resize: none;
+}
+
+#count {
+  position: absolute;
+  top: 105px;
+  left: 395px;
+}
+
+#textarea.max-length {
+  outline: transparent;
+  border-color: red;
+  color: red;
+}
+
+#textarea:focus {
+  border-color: red;
+}
+
+.red {
+  color: red;
+}

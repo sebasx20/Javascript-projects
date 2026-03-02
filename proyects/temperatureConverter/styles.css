@@ -1,0 +1,58 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2 {
+  font-weight: 400;
+  margin: 0;
+}
+
+.converter-container {
+  /* background-color: blue; */
+}
+.container {
+  border: 2px solid black;
+  width: 40%;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+input {
+  border: 1px solid black;
+  outline: none;
+  border-radius: 10px;
+}
+#number {
+  width: 45px;
+  padding: 7px;
+  /* text-align: center; */
+}
+
+.temperatures {
+  padding: 7px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+#btn-convert {
+  color: white;
+  padding: 7px;
+  background-color: black;
+}
+#result-convert {
+  color: green;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  font-size: small;
+}
+
+/* Hide the arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}

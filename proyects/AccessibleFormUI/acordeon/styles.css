@@ -1,0 +1,31 @@
+.accordions {
+  width: 40%;
+}
+.accordion {
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  border-radius: 8px;
+  width: 100%;
+  text-align: left;
+  height: 40px;
+}
+
+.accordions > div {
+  margin-top: 4px;
+}
+
+.panel > p {
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  border: 2px solid black;
+}
+
+.panel {
+  display: none;
+}
+.active {
+  display: block;
+}

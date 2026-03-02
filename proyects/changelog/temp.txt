@@ -1,0 +1,13 @@
+@media (min-width: 1200px) {
+  /* Place the date to the left */
+  .change_time {
+    left: -52%;
+    top: 11px;
+  }
+
+  /*Place description to the right*/
+  .change_des {
+    right: -52%;
+    top: -8px;
+  }
+}

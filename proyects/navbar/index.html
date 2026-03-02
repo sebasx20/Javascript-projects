@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#">LOGO</a>
+        </div>
+        <!-- Hamburger icon -->
+        <div class="ham-icon">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+        <!-- Menu en estado normal -->
+        <div class="nav-menu hide">
+          <a href="#">Home</a>
+          <a href="#">Post</a>
+          <a href="#">FQa</a>
+          <a href="#">Pricing</a>
+        </div>
+      </nav>
+      <div class="center">
+        <div></div>
+      </div>
+    </header>
+  </body>
+  <script>
+    const ham_icon = document.querySelector(".ham-icon");
+    const navMenu = document.querySelector(".nav-menu");
+
+    ham_icon.addEventListener("click", () => {
+      navMenu.classList.toggle("hide");
+    });
+  </script>
+</html>

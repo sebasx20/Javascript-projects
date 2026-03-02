@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <form action="" class="form">
+        <div class="user-dat">
+          <label for="name" class="form-name">Full Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="What should we call you?"
+            autocomplete="additional-name"
+          />
+          <!-- email -->
+          <label for="email" class="form-email">Email</label>
+          <input
+            type="email"
+            placeholder="What is your Email?"
+            id="email"
+            autocomplete="additional-name"
+          />
+        </div>
+        <!-- password zone  -->
+        <div class="pass">
+          <label for="pass">Enter Password</label>
+          <input type="password" placeholder="xxxxxx" name="pass" id="pass" />
+          <label for="con-pass">Confirm Password</label>
+          <input
+            type="password"
+            placeholder="xxxxxx"
+            name="con-pass"
+            id="con-pass"
+          />
+        </div>
+
+        <button type="button" class="btn-update">Update Profile</button>
+      </form>
+      <div class="second-colum">
+        <div
+          role="progressbar"
+          aria-valuemin="0"
+          aria-valuenow="50"
+          aria-valuemax="100"
+          class="radius-progress"
+        ></div>
+        <!-- <div></div> -->
+        <h2>Profile Completeness</h2>
+        <div class="profile-setup">
+          <p class="strike">Create Account</p>
+          <p class="strike">Update Roadmap Progress</p>
+          <p class="strike">Setup Public Profile</p>
+          <p>Complete your first project</p>
+          <p>Invite your Friends</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Pokemon Api</h1>
+    <div class="Container" id="imageContainer"></div>
+  </body>
+  <script src="index.js"></script>
+  <style>
+    div > img {
+      border-radius: 8px;
+      width: 100%;
+      height: auto;
+      box-shadow: 0px 0px 20px #8d8a8a;
+    }
+    .Container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 32px;
+    }
+  </style>
+</html>

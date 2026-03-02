@@ -1,0 +1,46 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+label {
+  font-weight: 400;
+}
+
+.container {
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 20px;
+}
+/* textbar  */
+.textbar {
+  background-color: antiquewhite;
+}
+.text-input {
+  width: 40%;
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.text-input::placeholder {
+  font-size: medium;
+  opacity: 0.5;
+  font-weight: 300;
+}
+
+.btn-textbar {
+  position: relative;
+  right: 53px;
+  border: 2px solid black;
+  padding: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn-textbar:before {
+  content: "";
+  background-image: url(https://cdn-icons-png.flaticon.com/512/3434/3434786.png);
+  background-size: cover;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 90px;
+}
